@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_background"
+    tools:context="com.quizapp.tinga.kasidiski.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollableContents"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/ekasiLogo"
+        android:src="@drawable/ekasi_logo3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"/>
+
+    <HorizontalScrollView
+        android:id="@+id/horizon_scroll"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ekasiLogo">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:text="Tournament"
+                android:layout_width="wrap_content"
+                android:layout_height="0.6in"/>
+
+            <Button
+                android:text="Fixture"
+                android:layout_width="wrap_content"
+                android:layout_height="0.6in" />
+
+            <Button
+                android:text="Updates"
+                android:layout_width="wrap_content"
+                android:layout_height="0.6in" />
+
+            <Button
+                android:text="Kasi News"
+                android:layout_width="wrap_content"
+                android:layout_height="0.6in" />
+
+            <Button
+                android:text="Videos"
+                android:layout_width="wrap_content"
+                android:layout_height="0.6in" />
+
+            <Button
+                android:text="Trials"
+                android:layout_width="wrap_content"
+                android:layout_height="0.6in" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_below="@+id/horizon_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:id="@+id/updates_linear">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="Quick Updates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#fff"
+        android:fontFamily="serif"/>
+
+        <View
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"></View>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/updates_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:text="Heineken v Man U"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#fff"
+            android:fontFamily="serif"
+            android:layout_weight="1"/>
+
+
+
+            <TextView
+                android:textColor="#fff"
+                android:text="12-11-16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
